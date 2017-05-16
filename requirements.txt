@@ -1,5 +1,0 @@
-flask
-folium
-pandas
-wtforms
-wtforms_components
