@@ -25,13 +25,14 @@ print()
 print("Operating system found...")
 print("OS: {0}".format(o_system + " " + architecture[0] + " " + architecture[1]))
 print()
-print("Setting up the configuration according to the operating system: ...")
-
 
 # This part of the program will configure specific variables, such as
 # miniconda binary, terminal behaviour etc.
 
 if not configured:
+    print("Setting up the configuration according to the operating system: ...")
+    print()
+    
     config_statements = []
     if o_system == "win32" or o_system == "cygwin":
         if architecture[0] == "32bit":
